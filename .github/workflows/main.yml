@@ -58,6 +58,7 @@ jobs:
 #            docker run -d --name cleonora-db --net cleonora-network -v cleonora-db-data:/var/lib/postgresql/data -e POSTGRES_PASSWORD=0000 -e POSTGRES_DB=postgres -p 5440:5432 postgres:latest
 #            echo "PostgreSQL container has been updated"
 
+
       - name: SSH Restart CleonoraAdmin container
         uses: appleboy/ssh-action@v1.2.1
         with:
